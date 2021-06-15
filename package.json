@@ -1,11 +1,11 @@
 {
-  "name": "sass",
+  "name": "p3_jeremy_carriere",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/styles.css"
   },
-  "author": "",
+  "author": "Jeremy CARRIERE",
   "license": "ISC"
 }

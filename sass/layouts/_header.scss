@@ -1,0 +1,14 @@
+.header {
+    .default-container {
+        height: 52px;
+        padding: 6px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        padding: 5px 0 0 0;
+        width: 164px;
+    }
+
+}

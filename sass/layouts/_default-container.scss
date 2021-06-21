@@ -1,0 +1,12 @@
+.default-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+
+    &--padding {
+        padding: 0 20px;
+    }
+    &--relative {
+        position: relative;
+    }
+}

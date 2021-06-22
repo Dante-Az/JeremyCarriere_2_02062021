@@ -1,0 +1,40 @@
+.main-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+
+    &__tag {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+
+    &__img {
+        height: 174px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__caption {
+        display: flex;
+        padding: 15px 12px;
+    }
+
+    &__title {
+        font-size: 18px;
+        margin: 0 0 7px 0;
+    }
+    p {
+        font-size: 17px;
+    }
+
+    &__like {
+        margin: 0 9px 0 0;
+        padding: 3px;
+        margin-left: auto;
+    }
+}

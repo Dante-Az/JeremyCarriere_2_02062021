@@ -1,0 +1,11 @@
+.tag {
+    padding : 7.5px 12px;
+    border-radius: 2px;
+    font-size : 14px;
+
+    &--new {
+        color : $primary-font;
+        background-color : $tertiary;
+    }
+
+}

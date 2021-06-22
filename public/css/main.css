@@ -82,6 +82,19 @@ button {
   border: none;
 }
 
+.main-btn {
+  display: inline-block;
+  min-width: 186px;
+  padding: 17px 22px;
+  height: 100%;
+  border-radius: 100px;
+  background: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-box-shadow: 0 3px 10px -3px black;
+          box-shadow: 0 3px 10px -3px black;
+  color: white;
+  text-align: center;
+}
+
 .location-form {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) inset;
@@ -154,5 +167,29 @@ button {
 
 .default-container--relative {
   position: relative;
+}
+
+.index h2 {
+  font-size: 24px;
+  margin-bottom: 34px;
+}
+
+.hook {
+  padding: 40px 0 55px 0;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.hook h1 {
+  margin-bottom: 12px;
+  font-size: 24px;
+  padding: 0 30px;
+  line-height: 28px;
+}
+
+.hook p {
+  line-height: 22px;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,9 +3,11 @@
 @import "./base/MeyerReset";
 @import "./base/base";
 
+@import "./components/bouton/main-btn";
 @import "./components/form/location-form";
+
 
 @import "./layouts/header";
 @import "./layouts/default-container";
 
-
+@import "./pages/index";

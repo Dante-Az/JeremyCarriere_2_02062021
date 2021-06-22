@@ -170,6 +170,72 @@ button {
   color: #7e7e7e;
 }
 
+.main-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+}
+
+.main-card__tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.main-card__img {
+  height: 174px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-card__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 12px;
+}
+
+.main-card__title {
+  font-size: 18px;
+  margin: 0 0 7px 0;
+}
+
+.main-card p {
+  font-size: 17px;
+}
+
+.main-card__like {
+  margin: 0 9px 0 0;
+  padding: 3px;
+  margin-left: auto;
+}
+
+.tag {
+  padding: 7.5px 12px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.tag--new {
+  color: #008766;
+  background-color: #99E2D0;
+}
+
+.heart-btn {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-size: 23px;
+  background: none;
+  cursor: pointer;
+}
+
 .header .default-container {
   height: 52px;
   padding: 6px 0 0 0;
@@ -248,5 +314,25 @@ button {
 
 .function__list-item {
   margin: 0 0 24px 0;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 55px 0;
+}
+
+.restaurant__cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant__card {
+  margin: 0 0 18px 0;
 }
 /*# sourceMappingURL=main.css.map */

@@ -136,6 +136,40 @@ button {
   font-size: 15px;
 }
 
+.function-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  padding: 0 34px;
+  -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+
+.function-btn__number {
+  width: 24px;
+  position: absolute;
+  left: -12px;
+  background-color: #9356DC;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.function-btn__icon {
+  font-size: 20px;
+  width: 40px;
+  color: #7e7e7e;
+}
+
 .header .default-container {
   height: 52px;
   padding: 6px 0 0 0;
@@ -191,5 +225,28 @@ button {
   line-height: 22px;
   font-size: 18px;
   margin-bottom: 30px;
+}
+
+.function {
+  padding: 55px 0;
+}
+
+.function__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.function__list-item {
+  margin: 0 0 24px 0;
 }
 /*# sourceMappingURL=main.css.map */

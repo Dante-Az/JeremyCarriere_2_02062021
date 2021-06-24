@@ -219,6 +219,97 @@ button {
   margin-left: auto;
 }
 
+.check-card {
+  position: relative;
+  padding: 14px 11px 12px 11px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.check-card:hover .check-card__content {
+  width: calc(100% - 60px + 11px);
+}
+
+.check-card:hover .check-card__check {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  right: 0;
+}
+
+.check-card:hover .check-card__icon-check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.3s 0.11s ease-out;
+  transition: -webkit-transform 0.3s 0.11s ease-out;
+  transition: transform 0.3s 0.11s ease-out;
+  transition: transform 0.3s 0.11s ease-out, -webkit-transform 0.3s 0.11s ease-out;
+}
+
+.check-card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  padding: 0 12px 0 0;
+  line-height: 18px;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.check-card__content div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+}
+
+.check-card__title {
+  margin-bottom: 6px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.check-card__text {
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.check-card__price {
+  font-size: 15px;
+}
+
+.check-card__check {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  background-color: #99E2D0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 .tag {
   padding: 7.5px 12px;
   border-radius: 2px;
@@ -239,6 +330,22 @@ button {
   cursor: pointer;
 }
 
+.menu-section {
+  margin: 0 0 35px 0;
+}
+
+.menu-section__title {
+  width: 40px;
+  padding: 7px 0;
+  margin-bottom: 14px;
+  font-size: 15px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.menu-section__card {
+  margin-bottom: 14px;
+}
+
 .header .default-container {
   height: 52px;
   padding: 6px 0 0 0;
@@ -256,6 +363,25 @@ button {
 .header__logo {
   padding: 5px 0 0 0;
   width: 164px;
+}
+
+.header__return-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: -6px;
+  bottom: 0;
+  padding: 0 23px;
+  font-size: 20px;
+}
+
+.header__return-btn::before {
+  padding-top: 6px;
 }
 
 .default-container {
@@ -361,5 +487,54 @@ button {
 
 .restaurant__card {
   margin: 0 0 18px 0;
+}
+
+.menu-restaurant {
+  position: relative;
+  padding-top: 203px;
+}
+
+.menu-restaurant__img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 255px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-restaurant__content {
+  padding: 38px 20px;
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+}
+
+.menu-restaurant__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px 31px 5px;
+}
+
+.menu-restaurant__title {
+  font-size: 28px;
+}
+
+.menu-restaurant__like {
+  margin: 0 0 0 auto;
+}
+
+.menu-restaurant__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
 }
 /*# sourceMappingURL=main.css.map */

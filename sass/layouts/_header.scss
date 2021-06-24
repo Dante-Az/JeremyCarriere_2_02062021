@@ -6,9 +6,25 @@
         justify-content: center;
         align-items: center;
     }
+
     &__logo {
         padding: 5px 0 0 0;
         width: 164px;
+    }
+
+    &__return-btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: -6px;
+        bottom: 0;
+        padding: 0 23px;
+        font-size: 20px;
+
+        &::before {
+            padding-top: 6px;
+        }
     }
 
 }

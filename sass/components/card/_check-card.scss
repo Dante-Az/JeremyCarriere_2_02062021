@@ -1,0 +1,73 @@
+.check-card {
+    position: relative;
+    padding: 14px 11px 12px 11px;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+     &:hover {
+        .check-card {
+            &__content {
+                width: calc(100% - 60px + 11px);
+            }
+            &__check {
+                transform: translateX(0%);
+                right: 0;
+            }
+            &__icon-check {
+                transform: rotate(360deg);
+                transition: transform 0.3s 0.11s ease-out;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        padding: 0 12px 0 0;
+        line-height: 18px;
+        transition: width 0.3s ease-out;
+
+        div {
+            flex: 1;
+            min-width: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 6px;
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__text {
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__price {
+        font-size: 15px;
+    }
+
+    &__check {
+        position: absolute;
+        top: 0;
+        right: -60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 100%;
+        font-size: 20px;
+        color: white;
+        background-color: $tertiary;
+        transition: all 0.3s ease-out;
+    }
+
+}

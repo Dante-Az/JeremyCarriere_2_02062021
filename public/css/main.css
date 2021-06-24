@@ -399,7 +399,7 @@ button {
 }
 
 .footer {
-  padding: 56px 0;
+  padding: 35px 0 56px;
   min-height: 197px;
   background-color: #353535;
   color: white;

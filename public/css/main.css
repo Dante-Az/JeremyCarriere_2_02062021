@@ -314,17 +314,17 @@ button {
 .check-card__title {
   margin-bottom: 6px;
   font-size: 18px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
 }
 
 .check-card__text {
   font-size: 15px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .check-card__price {

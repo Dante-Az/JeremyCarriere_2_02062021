@@ -28,3 +28,10 @@
 
     font-family : $fontName, Arial, Helvetica, sans-serif;
 }
+
+/// Mixin  setEllipsis : Définie les règles pour que le texte ne passe pas à la ligne et soit tronqué en cas de débordement
+@mixin setEllipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

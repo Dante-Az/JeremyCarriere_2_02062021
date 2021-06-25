@@ -41,17 +41,13 @@
     &__title {
         margin-bottom: 6px;
         font-size: 18px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        @include setEllipsis;
         @include robotoTypo('Bold');
     }
 
     &__text {
         font-size: 15px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        @include setEllipsis;
     }
 
     &__price {

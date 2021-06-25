@@ -21,6 +21,7 @@
         margin: 0 5px 31px 5px;
     }
     &__title {
+        @include typography('Shrikhand');
         font-size: 28px;
     }
     &__like {

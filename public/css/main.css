@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /* -- Colors -- */
+/*-- Fonts --*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -73,6 +75,8 @@ body {
   min-height: 100vh;
   width: 100%;
   color: black;
+  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
 
 a, input {
@@ -85,12 +89,40 @@ button {
   font-weight: inherit;
 }
 
+/* -- Déclaration de toutes les fonts -- */
+/* Shrikhand Font */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
 .main-btn {
   display: inline-block;
   min-width: 186px;
   padding: 17px 22px;
   height: 100%;
   border-radius: 100px;
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
   background: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
   -webkit-box-shadow: 0 3px 10px -3px black;
           box-shadow: 0 3px 10px -3px black;
@@ -132,11 +164,16 @@ button {
 
 .location-form__field {
   padding: 0 0 0 15px;
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
   width: 100%;
   height: 50px;
   border: none;
   background-color: transparent;
   font-size: 15px;
+}
+
+.location-form__field:focus {
+  outline: none;
 }
 
 .function-btn {
@@ -153,6 +190,7 @@ button {
           box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
   background-color: #f6f6f6;
   border-radius: 20px;
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
 }
 
 .function-btn__number {
@@ -165,6 +203,7 @@ button {
   text-align: center;
   font-size: 14px;
   line-height: 24px;
+  font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
 }
 
 .function-btn__icon {
@@ -205,6 +244,7 @@ button {
 }
 
 .main-card__title {
+  font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin: 0 0 7px 0;
 }
@@ -277,6 +317,7 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
 }
 
 .check-card__text {
@@ -288,6 +329,7 @@ button {
 
 .check-card__price {
   font-size: 15px;
+  font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
 }
 
 .check-card__check {
@@ -316,6 +358,7 @@ button {
   padding: 7.5px 12px;
   border-radius: 2px;
   font-size: 14px;
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
 }
 
 .tag--new {
@@ -413,10 +456,15 @@ button {
   display: block;
   font-size: 18px;
   margin: 0 0 31px 0;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
 
 .footer__list-item {
   padding: 0 0 10px 0;
+}
+
+.footer__list-item--icon {
+  font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
 }
 
 .footer__list-item--icon i {
@@ -426,6 +474,7 @@ button {
 }
 
 .index h2 {
+  font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
   font-size: 24px;
   margin-bottom: 34px;
 }
@@ -437,6 +486,7 @@ button {
 }
 
 .hook h1 {
+  font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
   margin-bottom: 12px;
   font-size: 24px;
   padding: 0 30px;
@@ -524,6 +574,7 @@ button {
 }
 
 .menu-restaurant__title {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-size: 28px;
 }
 

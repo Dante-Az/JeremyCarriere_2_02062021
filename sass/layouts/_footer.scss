@@ -9,15 +9,19 @@
         display: block;
         font-size: 18px;
         margin: 0 0 31px 0;
+        @include typography('Shrikhand');
     }
 
     &__list-item {
         padding: 0 0 10px 0;
+        &--icon {
+            @include robotoTypo('Regular');
 
-        &--icon i {
+             & i {
             display: inline-block;
             font-size: 12px;
             width: 17px;
+            }    
         }
     }
 }

@@ -7,6 +7,7 @@
     box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
     background-color: $fifth;
     border-radius: 20px;
+    @include robotoTypo('Medium');
     
     &__number {
         width: 24px;
@@ -18,6 +19,7 @@
         text-align: center;
         font-size: 14px;
         line-height: 24px;
+        @include robotoTypo('Regular');
     }
     &__icon {
         font-size: 20px;

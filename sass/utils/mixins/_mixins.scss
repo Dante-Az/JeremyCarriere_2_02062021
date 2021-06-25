@@ -17,3 +17,14 @@
 
     font-family : 'Roboto-#{$style}', Arial, Helvetica, sans-serif;
 }
+
+/// Mixin typography : sert à définir la font désirée 
+@mixin typography($fontName) {
+    $fontNames : ("Shrikhand");
+
+    @if not (isInList($fontNames, $fontName)) {
+        @error "La font \"#{$fontName}\" ne fait pas partie des font connue : #{$fontNames}";
+    }
+
+    font-family : $fontName, Arial, Helvetica, sans-serif;
+}

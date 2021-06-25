@@ -1,0 +1,19 @@
+/// Mixin setRobotoFonts : Définit les @font-face "roboto"
+@mixin setRobotoFonts {
+    @each $style in $RobotoFontStyles {
+        @font-face {
+            font-family: "Roboto-#{$style}";
+            src: url("../fonts/Roboto/Roboto-#{$style}.ttf") format('truetype');
+        }
+    }
+}
+
+/// Mixin robotoTypo : sert à définir le style désiré de la font roboto
+@mixin robotoTypo($style) {
+
+    @if not (isInList($RobotoFontStyles, $style)) {
+        @error "Le style \"#{$style}\" de la police Roboto ne fait pas partie de la liste connue : #{$style}";
+    } 
+
+    font-family : 'Roboto-#{$style}', Arial, Helvetica, sans-serif;
+}

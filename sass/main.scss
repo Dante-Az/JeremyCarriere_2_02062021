@@ -1,7 +1,10 @@
 @import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins/mixins";
 
 @import "./base/MeyerReset";
 @import "./base/base";
+@import "./base/typography";
 
 @import "./components/bouton/main-btn";
 @import "./components/form/location-form";

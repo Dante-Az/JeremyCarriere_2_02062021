@@ -24,6 +24,10 @@
         @include setMediaScreen(tablette) {
             height : 250px;
         }
+
+        @include setMediaScreen(laptop) {
+            height : 174px;
+        }
     }
 
     &__caption {

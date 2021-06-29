@@ -269,6 +269,12 @@ button {
   }
 }
 
+@media screen and (min-width: 825px) {
+  .main-card__img {
+    height: 174px;
+  }
+}
+
 .main-card__caption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,6 +428,8 @@ button {
 }
 
 .menu-section {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin: 0 0 35px 0;
 }
 
@@ -436,6 +444,19 @@ button {
 
 .menu-section__card {
   margin-bottom: 14px;
+}
+
+@media screen and (min-width: 825px) {
+  .menu-section.main-dish, .menu-section.dessert {
+    -ms-flex-preferred-size: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .menu-section.main-dish {
+    margin-right: 30px;
+  }
 }
 
 .header .default-container {
@@ -492,6 +513,12 @@ button {
   padding: 0 20px;
 }
 
+@media screen and (min-width: 825px) {
+  .default-container--padding {
+    padding: 0 50px;
+  }
+}
+
 .default-container--relative {
   position: relative;
 }
@@ -519,14 +546,39 @@ button {
   }
 }
 
+@media screen and (min-width: 825px) {
+  .footer__logo {
+    font-size: 30px;
+    width: 200px;
+    margin: 0 auto 40px auto;
+  }
+}
+
 @media screen and (min-width: 426px) {
   .footer__list {
     text-align: center;
   }
 }
 
+@media screen and (min-width: 825px) {
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__list-item {
   padding: 0 0 10px 0;
+}
+
+@media screen and (min-width: 825px) {
+  .footer__list-item:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
 }
 
 .footer__list-item--icon {
@@ -609,7 +661,28 @@ button {
 }
 
 .restaurant__card {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin: 0 0 18px 0;
+}
+
+@media screen and (min-width: 825px) {
+  .restaurant__card {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .restaurant__card:not(:nth-last-child(-n+2)) {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .restaurant__card {
+    -ms-flex-preferred-size: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
+  }
 }
 
 .menu-restaurant {
@@ -627,10 +700,22 @@ button {
      object-fit: cover;
 }
 
+@media screen and (min-width: 825px) {
+  .menu-restaurant__img {
+    height: 350px;
+  }
+}
+
 .menu-restaurant__content {
   padding: 38px 20px;
   border-radius: 40px 40px 0 0;
   background-color: #f6f6f6;
+}
+
+@media screen and (min-width: 825px) {
+  .menu-restaurant__content {
+    padding: 50px;
+  }
 }
 
 .menu-restaurant__header {
@@ -652,6 +737,19 @@ button {
   margin: 0 0 0 auto;
 }
 
+@media screen and (min-width: 825px) {
+  .menu-restaurant__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .menu-restaurant__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,5 +758,11 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 50px 0;
+}
+
+@media screen and (min-width: 825px) {
+  .menu-restaurant {
+    padding-top: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

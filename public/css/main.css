@@ -176,7 +176,7 @@ button {
   outline: none;
 }
 
-.function-btn {
+.choice-btn {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +193,7 @@ button {
   font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
 }
 
-.function-btn__number {
+.choice-btn__number {
   width: 24px;
   position: absolute;
   left: -12px;
@@ -206,7 +206,7 @@ button {
   font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
 }
 
-.function-btn__icon {
+.choice-btn__icon {
   font-size: 20px;
   width: 40px;
   color: #7e7e7e;
@@ -499,11 +499,11 @@ button {
   margin-bottom: 30px;
 }
 
-.function {
+.choice {
   padding: 55px 0;
 }
 
-.function__list {
+.choice__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +518,7 @@ button {
   width: 100%;
 }
 
-.function__list-item {
+.choice__list-item {
   margin: 0 0 24px 0;
 }
 

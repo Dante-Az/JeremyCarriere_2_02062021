@@ -9,6 +9,15 @@
     border-radius: 20px;
     @include robotoTypo('Medium');
     
+    &:hover {
+        background-color : $sixth;
+
+        .choice-btn { 
+            &__icon {
+                color : $primary;
+            }
+        }
+    }
     &__number {
         width: 24px;
         position: absolute;

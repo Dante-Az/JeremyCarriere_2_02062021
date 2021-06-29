@@ -193,6 +193,14 @@ button {
   font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
 }
 
+.choice-btn:hover {
+  background-color: #f5edff;
+}
+
+.choice-btn:hover .choice-btn__icon {
+  color: #9356DC;
+}
+
 .choice-btn__number {
   width: 24px;
   position: absolute;

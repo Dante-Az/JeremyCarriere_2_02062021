@@ -1,0 +1,61 @@
+.footer {
+    padding: 35px 0 56px;
+    min-height: 197px;
+    background-color: $fourth;
+    color: white;
+
+    &__logo {
+        width: 99px;
+        display: block;
+        font-size: 18px;
+        margin: 0 0 31px 0;
+        @include typography('Shrikhand');
+
+        @include setMediaScreen(tablette){
+            width: 150px;
+            font-size: 25px;
+            margin : 0 auto 30px auto;
+        }
+
+        @include setMediaScreen(laptop){
+            font-size: 30px;
+            width : 200px;
+            margin : 0 auto 40px auto;
+        }
+    }
+    &__list {
+        @include setMediaScreen(tablette){
+            text-align: center;
+        }
+        @include setMediaScreen(laptop){
+            display : flex;
+            justify-content: center; 
+        }
+    }    
+
+    &__list-item {
+        padding: 0 0 10px 0;
+
+        @include setMediaScreen(laptop){
+           
+            &:not(:last-child){
+                margin : 0 15px 0 0;
+            }
+        }
+        &--icon {
+            @include robotoTypo('Regular');
+
+             & i {
+            display: inline-block;
+            font-size: 12px;
+            width: 17px;
+            }    
+        }
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

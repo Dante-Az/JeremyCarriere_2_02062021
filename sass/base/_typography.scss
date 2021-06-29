@@ -1,0 +1,9 @@
+/* -- Déclaration de toutes les fonts -- */
+
+/* Shrikhand Font */
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../fonts/Shrikhand-Regular.ttf") format('truetype');
+}
+
+@include setRobotoFonts;

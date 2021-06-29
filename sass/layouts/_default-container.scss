@@ -1,0 +1,15 @@
+.default-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+
+    &--padding {
+        padding: 0 20px;
+        @include setMediaScreen(laptop) {
+            padding : 0 50px;
+        }
+    }
+    &--relative {
+        position: relative;
+    }
+}

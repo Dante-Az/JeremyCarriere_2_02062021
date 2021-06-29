@@ -1,0 +1,43 @@
+.choice-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 34px;
+    box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+    background-color: $fifth;
+    border-radius: 20px;
+    @include robotoTypo('Medium');
+    
+    &:hover {
+        background-color : $sixth;
+
+        .choice-btn { 
+            &__icon {
+                color : $primary;
+            }
+        }
+    }
+    &__number {
+        width: 24px;
+        position: absolute;
+        left: -12px;
+        background-color: $primary;
+        border-radius: 30px;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        @include robotoTypo('Regular');
+    }
+    &__description {
+        @include setMediaScreen(laptop) {
+            @include setEllipsis;            
+        }
+    }
+    &__icon {
+        font-size: 20px;
+        width: 40px;
+        color: #7e7e7e 
+    }
+}

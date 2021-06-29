@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    color:black;
+    @include robotoTypo('Light');
+    font-size: 1em;
+}
+a, input {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: none;
+    font-weight: inherit;
+}

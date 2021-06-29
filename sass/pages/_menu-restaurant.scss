@@ -1,0 +1,58 @@
+.menu-restaurant {
+    position: relative;
+    padding-top: 203px;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        height: 255px;
+        width: 100%;
+        object-fit: cover;
+        @include setMediaScreen(laptop){
+            height: 350px ;
+        }
+        @include setMediaScreen(desktop){
+            height: 500px;
+        }
+    }
+    &__content {
+        padding: 38px 20px;
+        border-radius: 40px 40px 0 0;
+        background-color: $fifth;
+        @include setMediaScreen(laptop) { 
+            padding : 50px;
+        }
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        margin: 0 5px 31px 5px;
+    }
+    &__title {
+        @include typography('Shrikhand');
+        font-size: 28px;
+    }
+    &__like {
+        margin: 0 0 0 auto;
+    }
+    &__main {
+        @include setMediaScreen(laptop){
+            display : flex;
+            justify-content: space-between;
+            flex-wrap: wrap;            
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content:center;
+        margin: 50px 0;
+    }
+    @include setMediaScreen(laptop){
+        padding-top: 300px;
+    }
+    @include setMediaScreen(desktop){
+        padding-top: 450px ;
+    }
+    
+}

@@ -1,0 +1,34 @@
+/// Mixin setRobotoFonts : Définit les @font-face "roboto"
+@mixin setRobotoFonts {
+    @each $style in $RobotoFontStyles {
+        @font-face {
+            font-family: "Roboto-#{$style}";
+            src: url("../fonts/Roboto/Roboto-#{$style}.ttf") format('truetype');
+        }
+    }
+}
+
+/// Mixin robotoTypo : sert à définir le style désiré de la font roboto
+@mixin robotoTypo($style) {
+    font-family : 'Roboto-#{$style}', Arial, Helvetica, sans-serif;
+}
+
+/// Mixin typography : sert à définir la font désirée 
+@mixin typography($fontName) {
+    $fontNames : ("Shrikhand");
+    font-family : $fontName, Arial, Helvetica, sans-serif;
+}
+
+/// Mixin  setEllipsis : Définie les règles pour que le texte ne passe pas à la ligne et soit tronqué en cas de débordement
+@mixin setEllipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/// Mixin setMediaScreen : Défini la média screen désirée
+@mixin setMediaScreen($screen) {
+    @media screen and (min-width : map-get($min-breakpoints, $screen)) {
+        @content;
+    }
+}

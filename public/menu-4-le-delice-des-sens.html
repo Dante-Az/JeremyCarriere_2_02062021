@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhMyFood | Réservez le menu qui vous convient</title>
+    <title>OhMyFood | Le délice des sens</title>
     <meta name="description" content="Réservez le menu qui vous convient. Découvrez des restaurants d'exception, sélectionnés par nos soins."> 
     <script src="https://kit.fontawesome.com/bdefac007a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <div>
-            <a href="index.html" title="Retour à la page précédente" class="fas fa-arrow-left"></a>
+    <header class="header">
+        <div class="default-container default-container--relative">
+            <a href="index.html" title="Retour à la page précédente" class="fas fa-arrow-left header__return-btn"></a>
             <a href="#" title="Accédez à la page d'acceuil">
-                <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+                <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
             </a>
         </div>
     </header>
     <!-- MAIN -->   
-    <main>
-        <article>
+    <main class="main">
+        <div class="default-container">
+        <article class="menu-restaurant">
             <picture>
-                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat de nourriture">
+                <img class="menu-restaurant__img"  src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat de nourriture">
             </picture>
-            <div>
+            <div class="menu-restaurant__content">
                 <!-- RESTAURANT HEADER -->
-                <header>
-                    <h1>Le délice des sens</h1>
-                    <div>
-                        <button>
+                <header class="menu-restaurant__header">
+                    <h1 class="menu-restaurant__title">Le délice des sens</h1>
+                    <div class="menu-restaurant__like">
+                        <button class="heart-btn">
                             <span>
                                 <i class="far fa-heart"></i>
                             </span>
@@ -37,156 +39,157 @@
                     </div>
                 </header>
                 <!-- RESTAURANT MENU -->
-                <div>
+                <div class="menu-restaurant__main">
                     <!-- RESTAURANT ENTREES -->
-                    <section>
-                        <h2>ENTRÉES</h2>
+                    <section class="menu-section">
+                        <h2 class="menu-section__title">ENTRÉES</h2>
                         <div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Tartare de thon</h3>
-                                        <p>Assaisonné au yuzu</p>
+                                        <h3 class="check-card__title">Tartare de thon</h3>
+                                        <p class="check-card__text">Assaisonné au yuzu</p>
                                     </div>
-                                    <span>25€</span>
+                                    <span class="check-card__price">25€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Bouchée de homard croustillant</h3>
-                                        <p>Et sa farandole de petits légumes</p>
+                                        <h3 class="check-card__title">Bouchée de homard croustillant</h3>
+                                        <p class="check-card__text">Et sa farandole de petits légumes</p>
                                     </div>
-                                    <span>35€</span>
+                                    <span class="check-card__price">35€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Velouté de cèpes</h3>
-                                        <p>Aux truffes</p>
+                                        <h3 class="check-card__title">Velouté de cèpes</h3>
+                                        <p class="check-card__text">Aux truffes</p>
                                     </div>
-                                    <span>20€</span>
+                                    <span class="check-card__price">20€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>                          
                         </div>
                     </section>
                     <!-- RESTAURANT PLATS -->
-                    <section>
-                        <h2>PLATS</h2>
+                    <section class="menu-section main-dish">
+                        <h2 class="menu-section__title">PLATS</h2>
                         <div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Poulet rôti aux herbes de Provence</h3>
-                                        <p>Et sa crème de truffe</p>
+                                        <h3 class="check-card__title">Poulet rôti aux herbes de Provence</h3>
+                                        <p class="check-card__text">Et sa crème de truffe</p>
                                     </div>
-                                    <span>40€</span>
+                                    <span class="check-card__price">40€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Langouste rôtie</h3>
-                                        <p>Et ses légumes de saison</p>
+                                        <h3 class="check-card__title">Langouste rôtie</h3>
+                                        <p class="check-card__text">Et ses légumes de saison</p>
                                     </div>
-                                    <span>35€</span>
+                                    <span class="check-card__price">35€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Côte de boeuf Angus</h3>
-                                        <p>Et sa purée de panais</p>
+                                        <h3 class="check-card__title">Côte de boeuf Angus</h3>
+                                        <p class="check-card__text">Et sa purée de panais</p>
                                     </div>
-                                    <span>44€</span>
+                                    <span class="check-card__price">44€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>                          
                         </div>
                     </section>
                     <!-- RESTAURANT DESSERTS -->
-                    <section>
-                        <h2>DESSERTS</h2>
+                    <section class="menu-section dessert">
+                        <h2 class="menu-section__title">DESSERTS</h2>
                         <div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Farandole de desserts</h3>
-                                        <p>Du chef</p>
+                                        <h3 class="check-card__title">Farandole de desserts</h3>
+                                        <p class="check-card__text">Du chef</p>
                                     </div>
-                                    <span>18€</span>
+                                    <span class="check-card__price">18€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Crème brulée</h3>
-                                        <p>Revisitée</p>
+                                        <h3 class="check-card__title">Crème brulée </h3>
+                                        <p class="check-card__text">Revisitée</p>
                                     </div>
-                                    <span>22€</span>
+                                    <span class="check-card__price">22€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>
-                            <div>
-                                <div>
+                            <div class="menu-section__card check-card">
+                                <div class="check-card__content">
                                     <div>
-                                        <h3>Tiramisu</h3>
-                                        <p>À la noisette</p>
+                                        <h3 class="check-card__title">Tiramisu</h3>
+                                        <p class="check-card__text">À la noisette</p>
                                     </div>
-                                    <span>23€</span>
+                                    <span class="check-card__price">23€</span>
                                 </div>
-                                <span>
-                                    <i class="fas fa-check-circle"></i>
+                                <span class="check-card__check">
+                                    <i class="fas fa-check-circle check-card__icon-check"></i>
                                 </span>
                             </div>                          
                         </div>
                     </section>
                 </div>
                 <!-- RESTAURANT FOOTER -->
-                <footer>
-                    <a href="#">Commander</a>
+                <footer class="menu-restaurant__footer">
+                    <a class="main-btn" href="#">Commander</a>
                 </footer>
             </div>
         </article>
+        </div>
     </main>
     <!-- FOOTER -->
-    <footer>
-        <div>
-            <a href="#" title="Accédez à la page d'accueil">ohmyfood</a>
-            <ul>
-                <li>
+    <footer class="footer">
+        <div class="default-container default-container--padding">
+            <a href="#" title="Accédez à la page d'accueil" class="footer__logo">ohmyfood</a>
+            <ul class="footer__list">
+                <li class="footer__list-item footer__list-item--icon">
                     <a href="#"><i class="fas fa-utensils"></i>Proposez un restaurant</a>
                 </li>
-                <li>
+                <li class="footer__list-item footer__list-item--icon">
                     <a href="#"><i class="fas fa-hands-helping"></i>Proposez un restaurant</a>
                 </li>
-                <li>
+                <li class="footer__list-item">
                     <a href="#">Mentions légales</a>
                 </li>
-                <li>
+                <li class="footer__list-item">
                     <a href="#">Contact</a>
                 </li>
             </ul>

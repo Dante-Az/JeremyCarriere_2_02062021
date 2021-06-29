@@ -7,180 +7,168 @@
     <title>OhMyFood | Réservez le menu qui vous convient!</title>
     <meta name="description" content="Réservez le menu qui vous convient. Découvrez des restaurants d'exception, sélectionnés par nos soins."> 
     <script src="https://kit.fontawesome.com/bdefac007a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="index">
     <!-- HEADER -->
-    <header>
-        <div>
+    <header class="header">
+        <div class="default-container default-container--relative default-container--padding">
             <a href="#" title="Accédez à la page d'acceuil">
-                <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+                <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
             </a>
         </div>
     </header>
     <!-- MAIN -->
     <main>
         <!-- FORM -->
-        <form>
+        <form class="location-form">
             <label for="location">
-                <i class="fas fa-map-marker-alt"></i>
-                <input id="location" name="location" type="text" value="Paris, Belleville">
+                <span class="default-container default-container--padding">
+                <span class="location-form__container">
+                <i class="fas fa-map-marker-alt location-form__icon"></i>
+                <input id="location" name="location" class="location-form__field" type="text" value="Paris, Belleville">
            </label>
         </form>
         <!-- ACCROCHE -->
-        <section>
-            <div>
+        <section class="hook">
+            <div class="default-container default-container--padding">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnées par nos soins</p>
-                <a href="#">Explorer nos restaurants</a>
+                <a href="#" class="main-btn">Explorer nos restaurants</a>
             </div>
         </section>
         <!-- FONCTIONNEMENT -->
-        <section>
-            <div>
+        <section class="choice">
+            <div class="default-container default-container--padding">
                 <h2>Fonctionnement</h2>
-                <ol>
-                    <li>
-                        <a href="#">
-                        <div>1</div>
-                        <span>
-                            <i class="fas fa-mobile-alt"></i>
+                <ol class="choice__list">
+                    <li class="choice__list-item">
+                        <a href="#" class="choice-btn">
+                        <div class="choice-btn__number">1</div>
+                        <span class="fas fa-mobile-alt choice-btn__icon"></i>
                         </span>
-                        <span>Choisissez un restaurant</span>
+                        <span class="choice-btn__description">Choisissez un restaurant</span>
                         </a>
                     </li>
-                </ol>
-                <ol>
-                    <li>
-                        <a href="#">
-                        <div>2</div>
-                        <span>
-                            <i class="fas fa-list-ul"></i>
+                    <li class="choice__list-item">
+                        <a href="#" class="choice-btn">
+                        <div class="choice-btn__number">2</div>
+                        <span class="fas fa-list-ul choice-btn__icon"></i>
                         </span>
-                        <span>Composez votre menu</span>
+                        <span class="choice-btn__description">Composez votre menu</span>
                         </a>
                     </li>
-                </ol>
-                <ol>
-                    <li>
-                        <a href="#">
-                        <div>3</div>
-                        <span>
-                            <i class="fas fa-store"></i>
+                    <li class="choice__list-item">
+                        <a href="#" class="choice-btn">
+                        <div class="choice-btn__number">3</div>
+                        <span class="fas fa-store choice-btn__icon"></i>
                         </span>
-                        <span>Dégustez au restaurant</span>
+                        <span class="choice-btn__description">Dégustez au restaurant</span>
                         </a>
                     </li>
                 </ol>
             </div>
         </section>
         <!-- RESTAURANTS -->
-        <section>
-            <div>
+        <section class="restaurant">
+            <div class="default-container default-container--padding">
                 <h2>Restaurants</h2>
-                <div>
-                    <article>
+                <div class="restaurant__cards-container">
+                    <article class="restaurant__card main-card">
                         <figure>
-                        <span>Nouveau</span>
+                        <span class="tag tag--new main-card__tag">Nouveau</span>
                         <a href="menu-1-la-palette-du-gout.html">
-                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat de nourriture">
+                            <img class="main-card__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat de nourriture">
                             </a>       
-                                <figcaption>
-                                    <div>
+                                <figcaption class="main-card__caption">                                   
                                         <div>
-                                            <h3>
+                                            <h3 class="main-card__title">
                                                 <a href="menu-1-la-palette-du-gout.html">La palette du goût</a>
                                             </h3>
                                             <p>
                                                 <a href="#">Ménilmontant</a>
                                             </p>
                                         </div>
-                                        <div>
-                                            <button>
+                                        <div class="main-card__like">
+                                            <button class="heart-btn">
                                                 <span>
                                                     <i class="far fa-heart"></i>
                                                 </span>
                                             </button>
                                         </div>
-                                   </div>
                                 </figcaption>                       
                         </figure>
                     </article>
-                    <article>
+                    <article class="restaurant__card main-card">
                         <figure>
-                        <span>Nouveau</span>
+                        <span class="tag tag--new main-card__tag">Nouveau</span>
                         <a href="menu-2-la-note-enchantee.html">
-                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat de nourriture">
+                            <img class="main-card__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat de nourriture">
                             </a>       
-                                <figcaption>
-                                    <div>
+                                <figcaption class="main-card__caption">
                                         <div>
-                                            <h3>
+                                            <h3 class="main-card__title">
                                                 <a href="menu-2-la-note-enchantee.html">La note enchantée</a>
                                             </h3>
                                             <p>
                                                 <a href="#">Charonne</a>
                                             </p>
                                         </div>
-                                        <div>
-                                            <button>
+                                        <div class="main-card__like">
+                                            <button class="heart-btn">
                                                 <span>
                                                     <i class="far fa-heart"></i>
                                                 </span>
                                             </button>
                                         </div>
-                                   </div>
                                 </figcaption>                       
                         </figure>
                     </article>
-                    <article>
+                    <article class="restaurant__card main-card">
                         <figure>
                         <a href="menu-3-a-la-francaise.html">
-                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat de nourriture">
+                            <img class="main-card__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat de nourriture">
                             </a>       
-                                <figcaption>
-                                    <div>
+                                <figcaption class="main-card__caption">
                                         <div>
-                                            <h3>
+                                            <h3 class="main-card__title">
                                                 <a href="menu-3-a-la-francaise.html">À la française</a>
                                             </h3>
                                             <p>
                                                 <a href="#">Cité Rouge</a>
                                             </p>
                                         </div>
-                                        <div>
-                                            <button>
+                                        <div class="main-card__like">
+                                            <button class="heart-btn">
                                                 <span>
                                                     <i class="far fa-heart"></i>
                                                 </span>
                                             </button>
                                         </div>
-                                   </div>
                                 </figcaption>                       
                         </figure>
                     </article>
-                    <article>
+                    <article class="restaurant__card main-card">
                         <figure>
                         <a href="menu-4-le-delice-des-sens.html">
-                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat de nourriture">
+                            <img class="main-card__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat de nourriture">
                             </a>       
-                                <figcaption>
-                                    <div>
+                                <figcaption class="main-card__caption">
                                         <div>
-                                            <h3>
+                                            <h3 class="main-card__title">
                                                 <a href="menu-4-le-delice-des-sens.html">Le délice des sens</a>
                                             </h3>
                                             <p>
                                                 <a href="#">Folie-Méricourt</a>
                                             </p>
                                         </div>
-                                        <div>
-                                            <button>
+                                        <div class="main-card__like">
+                                            <button class="heart-btn">
                                                 <span>
                                                     <i class="far fa-heart"></i>
                                                 </span>
                                             </button>
                                         </div>
-                                   </div>
                                 </figcaption>                       
                         </figure>
                     </article>
@@ -189,20 +177,20 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer>
-        <div>
-            <a href="#" title="Accédez à la page d'accueil">ohmyfood</a>
-            <ul>
-                <li>
+    <footer class="footer">
+        <div class="default-container default-container--padding">
+            <a href="#" title="Accédez à la page d'accueil" class="footer__logo">ohmyfood</a>
+            <ul class="footer__list">
+                <li class="footer__list-item footer__list-item--icon">
                     <a href="#"><i class="fas fa-utensils"></i>Proposez un restaurant</a>
                 </li>
-                <li>
+                <li class="footer__list-item footer__list-item--icon">
                     <a href="#"><i class="fas fa-hands-helping"></i>Proposez un restaurant</a>
                 </li>
-                <li>
+                <li class="footer__list-item">
                     <a href="#">Mentions légales</a>
                 </li>
-                <li>
+                <li class="footer__list-item">
                     <a href="#">Contact</a>
                 </li>
             </ul>

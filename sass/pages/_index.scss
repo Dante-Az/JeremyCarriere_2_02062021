@@ -1,0 +1,83 @@
+.index {
+
+    h2 {
+        @include robotoTypo('Bold');
+        font-size: 24px;
+        margin-bottom: 34px;
+    }
+
+}
+.hook {
+    padding: 40px 0 55px 0;
+    background-color: $fifth;
+    text-align: center;
+
+    h1 {
+        @include robotoTypo('Bold');
+        margin-bottom: 12px;
+        font-size: 24px;
+        padding: 0 30px;
+        line-height: 28px;
+    }
+    p {
+        line-height: 22px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+.choice {
+    padding: 55px 0;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 12px;
+        width: 100%;
+        @include setMediaScreen(desktop) {
+            flex-direction : row;
+        }
+    }
+
+    &__list-item {
+        margin: 0 0 24px 0;
+        @include setMediaScreen(desktop) {
+            flex-basis : calc( (100/3) * 1% - 20px );
+            margin: 0;
+        }
+    }
+}
+
+.restaurant {
+    background-color: $fifth;
+    padding: 55px 0;
+
+    &__cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card {
+        flex-basis: 100%;
+        margin: 0 0 18px 0;
+
+        @include setMediaScreen(laptop) {
+            margin : 0;
+        }
+
+    
+
+    &:not(:nth-last-child(-n+2)) { 
+        @include setMediaScreen(laptop) {
+            margin : 0 0 30px 0;
+        }
+    } 
+    
+    @include setMediaScreen(laptop) {
+        flex-basis : calc(50% - 15px); 
+        }
+    }
+}
+    
+

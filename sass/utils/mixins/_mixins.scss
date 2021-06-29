@@ -10,22 +10,12 @@
 
 /// Mixin robotoTypo : sert à définir le style désiré de la font roboto
 @mixin robotoTypo($style) {
-
-    @if not (isInList($RobotoFontStyles, $style)) {
-        @error "Le style \"#{$style}\" de la police Roboto ne fait pas partie de la liste connue : #{$style}";
-    } 
-
     font-family : 'Roboto-#{$style}', Arial, Helvetica, sans-serif;
 }
 
 /// Mixin typography : sert à définir la font désirée 
 @mixin typography($fontName) {
     $fontNames : ("Shrikhand");
-
-    @if not (isInList($fontNames, $fontName)) {
-        @error "La font \"#{$fontName}\" ne fait pas partie des font connue : #{$fontNames}";
-    }
-
     font-family : $fontName, Arial, Helvetica, sans-serif;
 }
 

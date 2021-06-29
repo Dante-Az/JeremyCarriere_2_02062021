@@ -6,6 +6,9 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+    &:hover {
+        box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.6);
+    }
 
     &__tag {
         position: absolute;
@@ -28,9 +31,15 @@
         @include robotoTypo('Bold');
         font-size: 18px;
         margin: 0 0 7px 0;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     p {
         font-size: 17px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__like {

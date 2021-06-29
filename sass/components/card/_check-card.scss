@@ -9,7 +9,8 @@
     cursor: pointer;
 
      &:hover {
-        .check-card {
+        box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.6);
+        .check-card {        
             &__content {
                 width: calc(100% - 60px + 11px);
             }

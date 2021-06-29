@@ -23,5 +23,11 @@
             width: 17px;
             }    
         }
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }

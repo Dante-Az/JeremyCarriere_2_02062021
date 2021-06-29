@@ -25,3 +25,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/// Mixin setMediaScreen : Défini la média screen désirée
+@mixin setMediaScreen($screen) {
+    @media screen and (min-width : map-get($min-breakpoints, $screen)) {
+        @content;
+    }
+}

@@ -5,6 +5,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include setMediaScreen(tablette) {
+            height : 70px;
+        }
     }
 
     &__logo {

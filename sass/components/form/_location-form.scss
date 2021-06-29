@@ -35,5 +35,10 @@
         &:focus {
             outline: none;
         }
+
+        @include setMediaScreen(tablette) {
+            font-size : 18px;
+            height : 70px;
+        }
     }
 }

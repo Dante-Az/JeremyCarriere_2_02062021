@@ -10,3 +10,8 @@ $primary-font : #008766;
 
 /*-- Fonts --*/
 $RobotoFontStyles : ( "Light", "Regular", "Medium", "Bold" );
+
+/* -- Breakpoints -- */
+$min-breakpoints : (
+    tablette    : 426px,
+)    

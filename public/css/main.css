@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* -- Colors -- */
 /*-- Fonts --*/
+/* -- Breakpoints -- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -182,6 +183,13 @@ button {
   outline: none;
 }
 
+@media screen and (min-width: 426px) {
+  .location-form__field {
+    font-size: 18px;
+    height: 70px;
+  }
+}
+
 .choice-btn {
   position: relative;
   display: -webkit-box;
@@ -253,6 +261,12 @@ button {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 426px) {
+  .main-card__img {
+    height: 250px;
+  }
 }
 
 .main-card__caption {
@@ -438,6 +452,12 @@ button {
           align-items: center;
 }
 
+@media screen and (min-width: 426px) {
+  .header .default-container {
+    height: 70px;
+  }
+}
+
 .header__logo {
   padding: 5px 0 0 0;
   width: 164px;
@@ -489,6 +509,20 @@ button {
   font-size: 18px;
   margin: 0 0 31px 0;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 426px) {
+  .footer__logo {
+    width: 150px;
+    font-size: 25px;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .footer__list {
+    text-align: center;
+  }
 }
 
 .footer__list-item {

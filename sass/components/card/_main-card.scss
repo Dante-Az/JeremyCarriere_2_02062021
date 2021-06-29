@@ -20,6 +20,10 @@
         height: 174px;
         width: 100%;
         object-fit: cover;
+
+        @include setMediaScreen(tablette) {
+            height : 250px;
+        }
     }
 
     &__caption {

@@ -9,4 +9,9 @@
     box-shadow: 0 3px 10px -3px rgb(0, 0, 0 / 40%);
     color: white;
     text-align: center;   
+
+    &:hover {
+        background : linear-gradient(350deg, lighten($primary,1%) 0%, lighten($secondary,5%) 100% );
+        box-shadow: 0 3px 10px -3px rgb(0, 0, 0 / 70%);
+    }
 }

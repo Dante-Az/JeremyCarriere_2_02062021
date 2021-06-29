@@ -30,6 +30,11 @@
         line-height: 24px;
         @include robotoTypo('Regular');
     }
+    &__description {
+        @include setMediaScreen(laptop) {
+            @include setEllipsis;            
+        }
+    }
     &__icon {
         font-size: 20px;
         width: 40px;

@@ -28,6 +28,9 @@
         @include setMediaScreen(laptop) {
             height : 174px;
         }
+        @include setMediaScreen(desktop) {
+            height : 250px;
+        }
     }
 
     &__caption {

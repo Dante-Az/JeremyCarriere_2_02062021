@@ -12,6 +12,9 @@
         @include setMediaScreen(laptop){
             height: 350px ;
         }
+        @include setMediaScreen(desktop){
+            height: 500px;
+        }
     }
     &__content {
         padding: 38px 20px;
@@ -48,4 +51,8 @@
     @include setMediaScreen(laptop){
         padding-top: 300px;
     }
+    @include setMediaScreen(desktop){
+        padding-top: 450px ;
+    }
+    
 }

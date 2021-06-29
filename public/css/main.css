@@ -228,6 +228,14 @@ button {
   font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
 }
 
+@media screen and (min-width: 825px) {
+  .choice-btn__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .choice-btn__icon {
   font-size: 20px;
   width: 40px;
@@ -272,6 +280,12 @@ button {
 @media screen and (min-width: 825px) {
   .main-card__img {
     height: 174px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main-card__img {
+    height: 250px;
   }
 }
 
@@ -640,8 +654,25 @@ button {
   width: 100%;
 }
 
+@media screen and (min-width: 1025px) {
+  .choice__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .choice__list-item {
   margin: 0 0 24px 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .choice__list-item {
+    -ms-flex-preferred-size: calc( (100/3) * 1% - 20px);
+        flex-basis: calc( (100/3) * 1% - 20px);
+    margin: 0;
+  }
 }
 
 .restaurant {
@@ -706,6 +737,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1025px) {
+  .menu-restaurant__img {
+    height: 500px;
+  }
+}
+
 .menu-restaurant__content {
   padding: 38px 20px;
   border-radius: 40px 40px 0 0;
@@ -763,6 +800,12 @@ button {
 @media screen and (min-width: 825px) {
   .menu-restaurant {
     padding-top: 300px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .menu-restaurant {
+    padding-top: 450px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -10,11 +10,41 @@
     background-color: white;
     z-index: 3;
     animation: end 0.5s 1.5s forwards, hide 0s 2s forwards;
+}
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.circle-loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(350deg, $primary 0%, $secondary 100%);
+    animation: spin 1s linear infinite;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        background: white;
+        border-radius: 50%;
+    }
+}
+
+.text-loader {
+    position: absolute;
+    display: flex;
     @include typography('Shrikhand');
     font-size: 25px;
 }
-
 .loader {
+    position: absolute;
     display: inline-block;
     @include JumpAnimation($number : 8)
 }

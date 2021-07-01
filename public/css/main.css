@@ -203,6 +203,28 @@ button {
   }
 }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .main-btn {
   display: inline-block;
   min-width: 186px;
@@ -759,11 +781,53 @@ button {
   z-index: 3;
   -webkit-animation: end 0.5s 1.5s forwards, hide 0s 2s forwards;
           animation: end 0.5s 1.5s forwards, hide 0s 2s forwards;
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+}
+
+.circle-loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.circle-loader::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+.text-loader {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
 
 .loader {
+  position: absolute;
   display: inline-block;
 }
 

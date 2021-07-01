@@ -5,4 +5,22 @@
     font-size: 23px;
     background: none;
     cursor: pointer;
+    &:focus {
+        .heart-fill {
+            font-weight: bold;
+            background: linear-gradient(350deg, $secondary  0%, $primary 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: heart 0.5s linear forwards;
+        }
+        .heart-empty {
+            animation: end 1s ease-in forwards;
+        }
+    }
 }
+.heart-empty {
+    position: relative;
+    left: 56%;
+}
+

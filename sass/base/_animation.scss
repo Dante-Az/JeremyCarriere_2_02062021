@@ -1,3 +1,4 @@
+/*Keyframes du menu*/
 @keyframes fade {
     0%      { 
         opacity:0;
@@ -8,19 +9,7 @@
         transform : translateY(0);
     }
 }
-
-@keyframes jumper {
-	0% {
-		transform: translateY(0px);
-	}
-	5% {
-		transform: translateY(-10px);
-	}
-	10%, 50% {
-		transform: translateY(0px);
-	}
-}
-
+/*keyframes du loader*/
 @keyframes end {
     0%  {
         opacity: 1;
@@ -35,12 +24,36 @@
         z-index: -1;
     }
 }
+/*keyframes du texte du loader*/
+@keyframes jumper {
+	0% {
+		transform: translateY(0px);
+	}
+	5% {
+		transform: translateY(-10px);
+	}
+	10%, 50% {
+		transform: translateY(0px);
+	}
+}
 
+/*Keyframes du cercle du loader*/
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+/*Keyframes du bouton like*/
+@keyframes heart {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }

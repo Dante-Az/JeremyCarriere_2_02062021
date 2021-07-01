@@ -117,6 +117,7 @@ button {
   src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
 }
 
+/*Keyframes du menu*/
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -129,7 +130,6 @@ button {
             transform: translateY(0);
   }
 }
-
 @keyframes fade {
   0% {
     opacity: 0;
@@ -143,36 +143,7 @@ button {
   }
 }
 
-@-webkit-keyframes jumper {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  5% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  10%, 50% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes jumper {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  5% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  10%, 50% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
+/*keyframes du loader*/
 @-webkit-keyframes end {
   0% {
     opacity: 1;
@@ -181,7 +152,6 @@ button {
     opacity: 0;
   }
 }
-
 @keyframes end {
   0% {
     opacity: 1;
@@ -203,6 +173,37 @@ button {
   }
 }
 
+/*keyframes du texte du loader*/
+@-webkit-keyframes jumper {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  5% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  10%, 50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes jumper {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  5% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  10%, 50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+/*Keyframes du cercle du loader*/
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -213,7 +214,6 @@ button {
             transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -222,6 +222,32 @@ button {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+/*Keyframes du bouton like*/
+@-webkit-keyframes heart {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -594,6 +620,26 @@ button {
   cursor: pointer;
 }
 
+.heart-btn:focus .heart-fill {
+  font-weight: bold;
+  background: linear-gradient(350deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: heart 0.5s linear forwards;
+          animation: heart 0.5s linear forwards;
+}
+
+.heart-btn:focus .heart-empty {
+  -webkit-animation: end 1s ease-in forwards;
+          animation: end 1s ease-in forwards;
+}
+
+.heart-empty {
+  position: relative;
+  left: 56%;
+}
+
 .menu-section {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -832,43 +878,43 @@ button {
 }
 
 .loader--jumpAnim-1 {
-  -webkit-animation: jumper 2s ease-in-out infinite 0s;
-          animation: jumper 2s ease-in-out infinite 0s;
+  -webkit-animation: jumper 3s ease-in-out infinite 0s;
+          animation: jumper 3s ease-in-out infinite 0s;
 }
 
 .loader--jumpAnim-2 {
-  -webkit-animation: jumper 2s ease-in-out infinite 0.15s;
-          animation: jumper 2s ease-in-out infinite 0.15s;
+  -webkit-animation: jumper 3s ease-in-out infinite 0.15s;
+          animation: jumper 3s ease-in-out infinite 0.15s;
 }
 
 .loader--jumpAnim-3 {
-  -webkit-animation: jumper 2s ease-in-out infinite 0.3s;
-          animation: jumper 2s ease-in-out infinite 0.3s;
+  -webkit-animation: jumper 3s ease-in-out infinite 0.3s;
+          animation: jumper 3s ease-in-out infinite 0.3s;
 }
 
 .loader--jumpAnim-4 {
-  -webkit-animation: jumper 2s ease-in-out infinite 0.45s;
-          animation: jumper 2s ease-in-out infinite 0.45s;
+  -webkit-animation: jumper 3s ease-in-out infinite 0.45s;
+          animation: jumper 3s ease-in-out infinite 0.45s;
 }
 
 .loader--jumpAnim-5 {
-  -webkit-animation: jumper 2s ease-in-out infinite 0.6s;
-          animation: jumper 2s ease-in-out infinite 0.6s;
+  -webkit-animation: jumper 3s ease-in-out infinite 0.6s;
+          animation: jumper 3s ease-in-out infinite 0.6s;
 }
 
 .loader--jumpAnim-6 {
-  -webkit-animation: jumper 2s ease-in-out infinite 0.75s;
-          animation: jumper 2s ease-in-out infinite 0.75s;
+  -webkit-animation: jumper 3s ease-in-out infinite 0.75s;
+          animation: jumper 3s ease-in-out infinite 0.75s;
 }
 
 .loader--jumpAnim-7 {
-  -webkit-animation: jumper 2s ease-in-out infinite 0.9s;
-          animation: jumper 2s ease-in-out infinite 0.9s;
+  -webkit-animation: jumper 3s ease-in-out infinite 0.9s;
+          animation: jumper 3s ease-in-out infinite 0.9s;
 }
 
 .loader--jumpAnim-8 {
-  -webkit-animation: jumper 2s ease-in-out infinite 1.05s;
-          animation: jumper 2s ease-in-out infinite 1.05s;
+  -webkit-animation: jumper 3s ease-in-out infinite 1.05s;
+          animation: jumper 3s ease-in-out infinite 1.05s;
 }
 
 .index h2 {

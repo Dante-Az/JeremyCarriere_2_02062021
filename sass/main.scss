@@ -4,6 +4,7 @@
 @import "./base/MeyerReset";
 @import "./base/base";
 @import "./base/typography";
+@import "./base/animation";
 
 @import "./components/bouton/main-btn";
 @import "./components/form/location-form";
@@ -18,6 +19,7 @@
 @import "./layouts/header";
 @import "./layouts/default-container";
 @import "./layouts/footer";
+@import "./layouts/loading-display";
 
 @import "./pages/index";
 @import "./pages/menu-restaurant"

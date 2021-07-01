@@ -8,3 +8,30 @@
         transform : translateY(0);
     }
 }
+
+@keyframes jumper {
+	0% {
+		transform: translateY(0px);
+	}
+	5% {
+		transform: translateY(-10px);
+	}
+	10%, 50% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes end {
+    0%  {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes hide {
+    100% {
+        z-index: -1;
+    }
+}

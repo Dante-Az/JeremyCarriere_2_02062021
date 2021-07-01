@@ -32,3 +32,14 @@
         @content;
     }
 }
+
+/// Mixin FadeAnimation : Défini l'animation fade avec décalage
+@mixin FadeAnimation($number : 1, $time : 0.5s, $delay : 0.15s) {
+
+    @for $i from 1 through ($number) {
+        &--fadeAnim-#{$i} {
+            animation : fade $time ease-in-out #{ $delay * ($i - 1) }  backwards ;
+        }
+    }
+
+}

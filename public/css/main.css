@@ -117,6 +117,32 @@ button {
   src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
 }
 
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .main-btn {
   display: inline-block;
   min-width: 186px;
@@ -330,6 +356,51 @@ button {
   -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+.check-card--fadeAnim-1 {
+  -webkit-animation: fade 0.5s ease-in-out 0s backwards;
+          animation: fade 0.5s ease-in-out 0s backwards;
+}
+
+.check-card--fadeAnim-2 {
+  -webkit-animation: fade 0.5s ease-in-out 0.15s backwards;
+          animation: fade 0.5s ease-in-out 0.15s backwards;
+}
+
+.check-card--fadeAnim-3 {
+  -webkit-animation: fade 0.5s ease-in-out 0.3s backwards;
+          animation: fade 0.5s ease-in-out 0.3s backwards;
+}
+
+.check-card--fadeAnim-4 {
+  -webkit-animation: fade 0.5s ease-in-out 0.45s backwards;
+          animation: fade 0.5s ease-in-out 0.45s backwards;
+}
+
+.check-card--fadeAnim-5 {
+  -webkit-animation: fade 0.5s ease-in-out 0.6s backwards;
+          animation: fade 0.5s ease-in-out 0.6s backwards;
+}
+
+.check-card--fadeAnim-6 {
+  -webkit-animation: fade 0.5s ease-in-out 0.75s backwards;
+          animation: fade 0.5s ease-in-out 0.75s backwards;
+}
+
+.check-card--fadeAnim-7 {
+  -webkit-animation: fade 0.5s ease-in-out 0.9s backwards;
+          animation: fade 0.5s ease-in-out 0.9s backwards;
+}
+
+.check-card--fadeAnim-8 {
+  -webkit-animation: fade 0.5s ease-in-out 1.05s backwards;
+          animation: fade 0.5s ease-in-out 1.05s backwards;
+}
+
+.check-card--fadeAnim-9 {
+  -webkit-animation: fade 0.5s ease-in-out 1.2s backwards;
+          animation: fade 0.5s ease-in-out 1.2s backwards;
 }
 
 .check-card:hover {

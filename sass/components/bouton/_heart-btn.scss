@@ -9,7 +9,7 @@
         .heart-fill {
             font-weight: bold;
             background: linear-gradient(350deg, $secondary  0%, $primary 100%);
-            background-clip: text;
+
             -webkit-background-clip: text;
             color: transparent;
             animation: heart 0.5s linear forwards;

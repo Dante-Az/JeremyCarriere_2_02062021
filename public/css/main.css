@@ -623,7 +623,6 @@ button {
 .heart-btn:focus .heart-fill {
   font-weight: bold;
   background: linear-gradient(350deg, #FF79DA 0%, #9356DC 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-animation: heart 0.5s linear forwards;

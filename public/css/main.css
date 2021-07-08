@@ -616,6 +616,9 @@ button {
   margin: 0;
   position: relative;
   font-size: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: none;
   cursor: pointer;
 }
@@ -636,7 +639,7 @@ button {
 
 .heart-empty {
   position: relative;
-  left: 56%;
+  left: 50%;
 }
 
 .menu-section {

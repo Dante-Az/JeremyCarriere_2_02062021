@@ -1,198 +1,204 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhMyFood | La palette du goût</title>
-    <meta name="description" content="Réservez le menu qui vous convient. Découvrez des restaurants d'exception, sélectionnés par nos soins."> 
-    <script src="https://kit.fontawesome.com/bdefac007a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <!-- HEADER -->
-    <header class="header">
-        <div class="default-container default-container--relative">
-            <a href="index.html" title="Retour à la page précédente" class="fas fa-arrow-left header__return-btn"></a>
-            <a href="#" title="Accédez à la page d'acceuil">
-                <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-            </a>
-        </div>
-    </header>
-    <!-- MAIN -->   
-    <main class="main">
-        <div class="default-container">
-        <article class="menu-restaurant">
-            <picture>
-                <img class="menu-restaurant__img"  src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat de nourriture">
-            </picture>
-            <div class="menu-restaurant__content">
-                <!-- RESTAURANT HEADER -->
-                <header class="menu-restaurant__header">
-                    <h1 class="menu-restaurant__title">La palette du goût</h1>
-                    <div class="menu-restaurant__like">
-                        <button class="heart-btn">                           
-                                <i class="far fa-heart heart-empty"></i>
-                                <i class="far fa-heart heart-fill"></i>                           
-                        </button>
-                    </div>
-                </header>
-                <!-- RESTAURANT MENU -->
-                <div class="menu-restaurant__main">
-                    <!-- RESTAURANT ENTREES -->
-                    <section class="menu-section">
-                        <h2 class="menu-section__title">ENTRÉES</h2>
-                        <div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-1">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Fricassé d'escargots</h3>
-                                        <p class="check-card__text">Au piment d'Espelette</p>
-                                    </div>
-                                    <span class="check-card__price">25€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-2">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Foie gras de canard mi-cuit</h3>
-                                        <p class="check-card__text">Et ses copeaux de truffe noire</p>
-                                    </div>
-                                    <span class="check-card__price">35€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-3">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Oeuf au plat</h3>
-                                        <p class="check-card__text">Assaisonnée à la truffe sur lit de caviar</p>
-                                    </div>
-                                    <span class="check-card__price">20€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>                          
-                        </div>
-                    </section>
-                    <!-- RESTAURANT PLATS -->
-                    <section class="menu-section main-dish">
-                        <h2 class="menu-section__title">PLATS</h2>
-                        <div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-4">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Filet de boeuf aux herbes</h3>
-                                        <p class="check-card__text">Accompagné de sa ribambelle de légumes</p>
-                                    </div>
-                                    <span class="check-card__price">40€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-5">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Parmentier de queue de boeuf</h3>
-                                        <p class="check-card__text">À la truffe noire sur sa purée de panais</p>
-                                    </div>
-                                    <span class="check-card__price">35€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-6">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Filet de turbot</h3>
-                                        <p class="check-card__text">Aux agrumes</p>
-                                    </div>
-                                    <span class="check-card__price">44€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>                          
-                        </div>
-                    </section>
-                    <!-- RESTAURANT DESSERTS -->
-                    <section class="menu-section dessert">
-                        <h2 class="menu-section__title">DESSERTS</h2>
-                        <div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-7">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Paris-Brest</h3>
-                                        <p class="check-card__text">Revisité</p>
-                                    </div>
-                                    <span class="check-card__price">18€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-8">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Macaron au chocolat d'exception</h3>
-                                        <p class="check-card__text">Et glace à la vanille de madagascar</p>
-                                    </div>
-                                    <span class="check-card__price">22€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>
-                            <div class="menu-section__card check-card check-card--fadeAnim-9">
-                                <div class="check-card__content">
-                                    <div>
-                                        <h3 class="check-card__title">Mousse au chocolat</h3>
-                                        <p class="check-card__text">Au piment d'Espelette et à la truffe noire</p>
-                                    </div>
-                                    <span class="check-card__price">23€</span>
-                                </div>
-                                <span class="check-card__check">
-                                    <i class="fas fa-check-circle check-card__icon-check"></i>
-                                </span>
-                            </div>                          
-                        </div>
-                    </section>
-                </div>
-                <!-- RESTAURANT FOOTER -->
-                <footer class="menu-restaurant__footer">
-                    <a class="main-btn" href="#">Commander</a>
-                </footer>
-            </div>
-        </article>
-        </div>
-    </main>
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="default-container default-container--padding">
-            <a href="#" title="Accédez à la page d'accueil" class="footer__logo">ohmyfood</a>
-            <ul class="footer__list">
-                <li class="footer__list-item footer__list-item--icon">
-                    <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-                </li>
-                <li class="footer__list-item footer__list-item--icon">
-                    <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="#">Mentions légales</a>
-                </li>
-                <li class="footer__list-item">
-                    <a href="mailto:contact@ohmyfood.fr">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OhMyFood | La palette du goût</title>
+		<meta name="description" content="Réservez le menu qui vous convient. Découvrez des restaurants d'exception, sélectionnés par nos soins.">
+		<script src="https://kit.fontawesome.com/bdefac007a.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="header">
+			<div class="default-container default-container--relative">
+				<a href="index.html" title="Retour à la page précédente" class="fas fa-arrow-left header__return-btn"></a>
+				<a href="#" title="Accédez à la page d'acceuil">
+                    <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+                </a>
+			</div>
+		</header>
+		<!-- MAIN -->
+		<main class="main">
+			<div class="default-container">
+				<article class="menu-restaurant">
+					<picture>
+						<img class="menu-restaurant__img"  src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat de nourriture">
+					</picture>
+					<div class="menu-restaurant__content">
+						<!-- RESTAURANT HEADER -->
+						<header class="menu-restaurant__header">
+							<h1 class="menu-restaurant__title">La palette du goût</h1>
+							<div class="menu-restaurant__like">
+								<button class="heart-btn">
+									<i class="far fa-heart heart-empty"></i>
+									<i class="far fa-heart heart-fill"></i>
+								</button>
+							</div>
+						</header>
+						<!-- RESTAURANT MENU -->
+						<div class="menu-restaurant__main">
+							<!-- RESTAURANT ENTREES -->
+							<section class="menu-section">
+								<h2 class="menu-section__title">ENTRÉES</h2>
+								<div>
+									<div class="menu-section__card check-card check-card--fadeAnim-1">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Fricassé d'escargots</h3>
+												<p class="check-card__text">Au piment d'Espelette</p>
+											</div>
+											<span class="check-card__price">25€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+									<div class="menu-section__card check-card check-card--fadeAnim-2">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Foie gras de canard mi-cuit</h3>
+												<p class="check-card__text">Et ses copeaux de truffe noire</p>
+											</div>
+											<span class="check-card__price">35€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+									<div class="menu-section__card check-card check-card--fadeAnim-3">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Oeuf au plat</h3>
+												<p class="check-card__text">Assaisonnée à la truffe sur lit de caviar</p>
+											</div>
+											<span class="check-card__price">20€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+								</div>
+							</section>
+							<!-- RESTAURANT PLATS -->
+							<section class="menu-section main-dish">
+								<h2 class="menu-section__title">PLATS</h2>
+								<div>
+									<div class="menu-section__card check-card check-card--fadeAnim-4">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Filet de boeuf aux herbes</h3>
+												<p class="check-card__text">Accompagné de sa ribambelle de légumes</p>
+											</div>
+											<span class="check-card__price">40€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+									<div class="menu-section__card check-card check-card--fadeAnim-5">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Parmentier de queue de boeuf</h3>
+												<p class="check-card__text">À la truffe noire sur sa purée de panais</p>
+											</div>
+											<span class="check-card__price">35€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+									<div class="menu-section__card check-card check-card--fadeAnim-6">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Filet de turbot</h3>
+												<p class="check-card__text">Aux agrumes</p>
+											</div>
+											<span class="check-card__price">44€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+								</div>
+							</section>
+							<!-- RESTAURANT DESSERTS -->
+							<section class="menu-section dessert">
+								<h2 class="menu-section__title">DESSERTS</h2>
+								<div>
+									<div class="menu-section__card check-card check-card--fadeAnim-7">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Paris-Brest</h3>
+												<p class="check-card__text">Revisité</p>
+											</div>
+											<span class="check-card__price">18€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+									<div class="menu-section__card check-card check-card--fadeAnim-8">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Macaron au chocolat d'exception</h3>
+												<p class="check-card__text">Et glace à la vanille de madagascar</p>
+											</div>
+											<span class="check-card__price">22€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+									<div class="menu-section__card check-card check-card--fadeAnim-9">
+										<div class="check-card__content">
+											<div>
+												<h3 class="check-card__title">Mousse au chocolat</h3>
+												<p class="check-card__text">Au piment d'Espelette et à la truffe noire</p>
+											</div>
+											<span class="check-card__price">23€</span>
+										</div>
+										<span class="check-card__check">
+                                            <i class="fas fa-check-circle check-card__icon-check"></i>
+                                        </span>
+									</div>
+								</div>
+							</section>
+						</div>
+						<!-- RESTAURANT FOOTER -->
+						<footer class="menu-restaurant__footer">
+							<a class="main-btn" href="#">Commander</a>
+						</footer>
+					</div>
+				</article>
+			</div>
+		</main>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="default-container default-container--padding">
+				<a href="#" title="Accédez à la page d'accueil" class="footer__logo">ohmyfood</a>
+				<ul class="footer__list">
+					<li class="footer__list-item footer__list-item--icon">
+						<a href="#">
+                            <i class="fas fa-utensils"></i>
+                            Proposer un restaurant
+                        </a>
+					</li>
+					<li class="footer__list-item footer__list-item--icon">
+						<a href="#">
+                            <i class="fas fa-hands-helping"></i>
+                            Devenir partenaire
+                        </a>
+					</li>
+					<li class="footer__list-item">
+                        <a href="#">Mentions légales</a>
+                    </li>
+					<li class="footer__list-item">
+                        <a href="mailto:contact@ohmyfood.fr">Contact</a>
+                    </li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 </html>

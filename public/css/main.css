@@ -259,16 +259,16 @@ button {
   border-radius: 100px;
   font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
   background: linear-gradient(350deg, #9356DC 0%, #FF79DA 100%);
-  -webkit-box-shadow: 0 3px 10px -3px black;
-          box-shadow: 0 3px 10px -3px black;
+  -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.4);
   color: white;
   text-align: center;
 }
 
 .main-btn:hover {
   background: linear-gradient(350deg, #965add 0%, #ff93e1 100%);
-  -webkit-box-shadow: 0 3px 10px -3px black;
-          box-shadow: 0 3px 10px -3px black;
+  -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.9);
 }
 
 .location-form {

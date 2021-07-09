@@ -6,12 +6,12 @@
     border-radius: 100px;
     @include robotoTypo('Medium');
     background: linear-gradient(350deg, $primary 0%, $secondary 100%);
-    box-shadow: 0 3px 10px -3px rgb(0, 0, 0 / 40%);
+    box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.4);
     color: white;
     text-align: center;   
 
     &:hover {
         background : linear-gradient(350deg, lighten($primary,1%) 0%, lighten($secondary,5%) 100% );
-        box-shadow: 0 3px 10px -3px rgb(0, 0, 0 / 70%);
+        box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.9);
     }
 }
